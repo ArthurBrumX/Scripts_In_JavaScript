@@ -25,11 +25,11 @@
     <script>
         /*
 
-        Var n1 = window.prompt('Digite um numero: ') //mesmo usando numero, o comando entende que é uma string
+            Var n1 = window.prompt('Digite um numero: ') //mesmo usando numero, o comando entende que é uma string
 
-        Var n2 = window.prompt("Digite outro numero: ") // oque vai acontecer vai ser uma concatenacao
+            Var n2 = window.prompt("Digite outro numero: ") // oque vai acontecer vai ser uma concatenacao
 
-        var s = n1 + n2 // Ao inves de acontecer a soma de valores, eles vao se unir. ex: 2 + 2 = 22
+            var s = n1 + n2 // Ao inves de acontecer a soma de valores, eles vao se unir. ex: 2 + 2 = 22
 
         */
 
@@ -37,25 +37,30 @@
 
         para forcar que o programa entenda que é pra acontecer soma entre numero pode ser usado dois domandos
 
-        Number.parseInt(n) // para forcar que o programa entenda que é um numero inteiro
-        Number.parcefloat(n) // para forcar que o programa entenda que é um numero real (Com virgula)
-        Number(n) // para deixar com que o JS decida da melhor forma.
+            Number.parseInt(n) // para forcar que o programa entenda que é um numero inteiro
+            Number.parcefloat(n) // para forcar que o programa entenda que é um numero real (Com virgula)
+            Number(n) // para deixar com que o JS decida da melhor forma.
 
        */
 
         //Sem o uso de template string
 
         /*
-        var n1 = Number (window.prompt('Digite um numero: ')) //String
-        var n2 = Number (window.prompt ('Digite outro numero')) //String
-        var s = n1 + n2
-        window.alert("a soma dos valores é " + s ) // Concatenacao
+            var n1 = Number (window.prompt('Digite um numero: ')) //String
+            var n2 = Number (window.prompt ('Digite outro numero')) //String
+            var s = n1 + n2
+            window.alert("a soma dos valores é " + s ) // Concatenacao
+
         // Não esquecer que tem comandos com letras maiusculas se nao, o programa nao roda.
+
         // (number + number) para adicao
+
         // (string + string) para concatenacao
+
         */
-        var n1 = Number (window.prompt('Digite um numero: ')) //String
-        var n2 = Number (window.prompt ('Digite outro numero')) //String
+       
+        var n1 = Number (window.prompt('Digite um numero: ')) 
+        var n2 = Number (window.prompt ('Digite outro numero'))
         var s = n1 + n2
         window.alert(`a soma entre ${n1} e ${n2} é igual a ${s}`) //fazendo uso do template string 
 
