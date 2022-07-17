@@ -23,12 +23,32 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-         var n1 = Number.parseInt(window.prompt('Digite um numero: ')) //Recebe o valor string 
-         var n2 = Number.parseInt(window.prompt('Digite outro numero: ')) //Recebe o valor string
-         var s = n1 + n2 
-         window.alert('A soma dos valores é ' + /*para transforma em uma string (String (s)) */ s) //concatenacao
-         // (number + number) para adicao
-         // (string + string) para concatenacao
+        /*
+
+        Var n1 = window.prompt('Digite um numero: ') //mesmo usando numero, o comando entende que é uma string
+
+        Var n2 = window.prompt("Digite outro numero: ") // oque vai acontecer vai ser uma concatenacao
+
+        var s = n1 + n2 // Ao inves de acontecer a soma de valores, eles vao se unir. ex: 2 + 2 = 22
+
+        */
+
+       /*
+
+        para forcar que o programa entenda que é pra acontecer soma entre numero pode ser usado dois domandos
+
+        Number.parseInt(n) // para forcar que o programa entenda que é um numero inteiro
+        Number.parcefloat(n) // para forcar que o programa entenda que é um numero real (Com virgula)
+        Number(n) // para deixar com que o JS decida da melhor forma.
+
+       */
+
+        var n1 = Number (window.prompt('Digite um numero: ')) //String
+        var n2 = Number (window.prompt ('Digite outro numero')) //String
+        var s = n1 + n2
+        window.alert("a soma dos valores é " + s ) // Concatenacao
+        // (number + number) para adicao
+        // (string + string) para concatenacao
     </script>
 </body>
 </html>
