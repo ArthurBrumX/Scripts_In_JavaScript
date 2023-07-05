@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo testes com tratamento de dados</title>
+    <style>
+        body{
+            font: normal 20pt arial
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('qual é o seu nome: ')
+        document.write(`Olá, <strong> ${nome}</strong>! Seu nome tem ${nome.length} letras. <br/>`) //length - Conta quantos caracters tem o valor digitado
+        //Escreva no documento -> ('seu nome tem "tantas" letras')
+        //<Strong> é uma Tag em html que deixa em negrito.
+
+        document.write(`Seu nome em maiusculo é ${nome.toUpperCase()}<br/>`)
+        //com o comando toUpperCase() colocando antes a variavel seguindo do ponto, vc deixa o valor dela maiusculo
+
+        document.write(`Seu nome em Minusculo é ${nome.toLowerCase()}<br/>`)
+        //Com o comando toLowerCase() colocando antes a variavel seguindo do ponto, vc deixa o valor em minusculo
+
+        /*
+        s.length - // Quantos caracteres a string tem
+        s.toUpperCase() - //Tudo para 'MAIUSCULAS'
+        s.toLowerCase() - //Tudo para 'minusculas'
+        */
+
+        //-------------------------------------------------------------
+
+        // para converter numeros em moedas de acordo com o pais
+
+        //Ex - Var n1 = 1545.50
+
+        // n1.toFixed(2).replace('.',',') 
+            // toFixed - significa que eu quero que tenha dois numeros apois o ponto
+            // replace - Siginifica que eu quero que seje trocado o ponto pea virgula
+        
+        //-------------------------------------------------------------
+
+        // n1.toLocaleString('pt-BR', {style: 'currency',currençy: 'BRL'})
+
+            //toLocaleString - Siginifica que é uma string localizada pela parte do mundo, forca a procurar a string em portuges
+            //Style - Estilo
+            //Currency -Dinheiro
+            // BRL - Real(moeda brasileira)
+            // Juntando tudo -> 'O estilo da moeda vai ser a moeda do brasil'
+
+        //-------------------------------------------------------------
+
+        // n1.toLocaleString('pt-BR', {style: 'currency',currençy: 'USD'})
+
+            //toLocaleString - Siginifica que é uma string localizada pela parte do mundo, forca a procurar a string em Ingles
+            //Style - Estilo
+            //Currency -Dinheiro
+            // USD - Dolar (moeda Americana)
+            // Juntando tudo -> 'O estilo da moeda vai ser a moeda dos Estados Unidos Da America'
+
+        //-------------------------------------------------------------
+
+        // n1.toLocaleString('pt-BR', {style: 'currency',currençy: 'EUR'})
+
+            //toLocaleString - Siginifica que é uma string localizada pela parte do mundo, forca a procurar a string em Ingles
+            //Style - Estilo
+            //Currency -Dinheiro
+            // EUR - Euro (moeda Europeia)
+            // Juntando tudo -> 'O estilo da moeda vai ser a moeda da Europa'
+
+        //-------------------------------------------------------------
+        
+    </script>
+</body>
+</html>

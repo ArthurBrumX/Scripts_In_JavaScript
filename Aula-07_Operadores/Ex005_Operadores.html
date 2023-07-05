@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <h1>Operadores</h1>
+    <p>Tipos De Operadores</p>
+    <ul>
+        <li>Aritméticos</li>
+        <li>Atribuição</li>
+        <li>Relacionais</li>
+        <li>Logicos</li>
+        <li>Ternário</li>
+    </ul>
+
+    <h1>Operadores Aritméticos</h1>
+    <p>Exemplo Operandos (5) e (2) - operadores Binarios</p>
+    <ul>
+        <li>5 (+) 2 = 7 -> Adicao</li>
+        <li>5 (-) 2 = 3 -> Subtracao</li>
+        <li>5 (*) 2 = 10 -> Multiplicacao</li>
+        <li>5 (/) 2 = 2.5 -> Divisao Real</li>
+        <li>5 (%) 2 = 1 -> Resto Da Divisao Inteira</li>
+        <li>5 (**) 2 = 25 -> Pontecia </li>
+    </ul>
+
+    <h1>Ordem de precedencia dos operadores Aritmeticos - Ordem de Prioridades</h1>
+    <ul>
+        <li>"()" -> Parenteses</li>
+        <li>"**" -> Potencia</li>
+        <li>"*"", "/" , "%" -> Multiplicacao, Divisao, Resto da Divisao</li> <!--Quando Dentro de uma mesma exprecao é incluido mais de um desses, a ordem será a ordem de escrita-->
+        <li>"+", "-" ->Adição, Subtracao</li>
+    </ul>
+
+    <h1>Atribuição Simples</h1>
+    <ul>
+        <li>var a = 5 + 3 -> 8</li>
+        <li>var b = a % 5 -> 3</li>
+        <li>var c = 5 * b ** 2 -> 45</li>
+        <li>var d = 10 - a / 2 -> 6</li>
+        <li>var e = 6 * 2 / d -> 2</li>
+        <li>var f = b % e + 3 / e -> 3</li>
+    </ul>
+
+    <h1>Auto-Atribuições</h1>
+    <p>Exemplo -> Var n = 3</p>
+    <ul>
+        <li>n = n + 4 -> 7</li>
+        <li>n = n - 5 -> 2</li>
+        <li>n = n * 4 -> 8</li>
+        <li>n = n / 2 -> 4</li>
+        <li>n = n ** 2 -> 16</li>
+        <li>n = % 5 -> 1</li>
+    </ul>
+    <p>----------------------------</p>
+    <h2>Simplificando</h2>
+    <ul>
+        <li>n = n + 4 -> 7</li>
+            <ul>
+                <li>Simplificado -> <strong>n+=4</strong> Recebe ele mesmo <Strong>Somado</Strong> com o numero da frente</li>
+            </ul>
+        <li>n = n - 5 -> 2</li>
+            <ul>
+                <li>Simplificado -> <strong>n-=4</strong> Recebe ele mesmo <strong>Subtraido</strong> com o numero da frente</li>
+            </ul>
+        <li>n = n * 4 -> 8</li>
+            <ul>
+                <li>Simplificado -> <strong>n*=4</strong> Recebe ele mesmo <strong>Multiplicado</strong> com o numero da frente</li>
+            </ul>
+        <li>n = n / 2 -> 4</li>
+            <ul>
+                <li>Simplificado -> <strong>n/=4</strong> Recebe ele mesmo <strong>Dividido</strong> com o numero da frente</li>
+            </ul>
+        <li>n = n ** 2 -> 16</li>
+            <ul>
+                <li>Simplificado -> <strong>n**=4</strong> Recebe ele mesmo <strong>Elevado a pontência</strong> com o numero da frente</li>
+            </ul>
+        <li>n = n% 5 -> 1</li>
+            <ul>
+                <li>Simplificado -> <strong>n%=4</strong> Recebe ele mesmo <strong>Resto da Divisão</strong> com o numero da frente</li>
+            </ul>
+    </ul>
+
+    <h1>Incremento</h1>
+    <p>Var x = 5</p>
+    <ul>
+        <li>x = x + 1 -> 6 (A variavel recebe a variavel mais 1) -> simplificando ainda mais -> Operador de Incremento -> x++</li>
+            <ul>
+                <li>x = x + 1 -> (x++)</li>
+            </ul>
+
+        <li>x = x - 1 -> 5</li>
+            <ul>
+                <li>x = x - 1 -> (x--)</li>
+            </ul>
+        
+        <li>x = x * 1 -> 5</li>
+            <ul>
+                <li>x = x * 1 -> (x**)</li>
+            </ul>
+
+        <li>x = x / 1 -> 5</li>
+        <ul>
+            <li>x = x / 1 -> (x//)</li>
+        </ul>
+
+        <li>x = x ** 1 -> 25</li>
+            <ul>
+                <li>x = x * 1 -> (x****)</li>
+            </ul>
+
+        <li>x = x % 1 -> 5</li>
+        <ul>
+            <li>x = x % 1 -> (x%%)</li>
+        </ul>
+    </ul>
+
+    <p>Pré-Incremento = (n++)</p>
+    <p>Pós-Incremento = (++n)</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
