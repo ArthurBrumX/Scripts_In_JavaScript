@@ -47,10 +47,51 @@
 
     <h1>Operadores Logicos</h1>
     <ul>
-        <li>! - Negacao</li>
-        <li>&& - Conjuncao (e)</li>
-        <li>||- Dijuncao (ou)</li>
+        <li>! - Negacao</li> <!--(NÃO) - NÃO LOGICO-->
+            <ul>
+                <li>! = True -> False (Uma coisa não verdadeira é falsa)</li>
+                <li>! = False -> True (Uma coisa não falsa é verdadeira)</li>
+            </ul>
+
+        <li>&& - Conjuncao (e)</li> <!--(E) - lOGICO-->
+            <ul>
+                <li>True && True -> True</li><!--nesse operaador (e), sao precisos ser dois verdadeiros pro resultado logico ser verdadeiro-->
+                <li>True && False ->False</li>
+                <li>False && True -> False</li>
+                <li>False && False -> False</li>
+            </ul>
+
+        <li>||- Dijuncao (ou)</li> <!--(OU) - LOGICO-->
+            <ul>
+                <li>True || True -> True</li>
+                <li>True || False-> True</li><!--Nesse operador (ou), Sao precisos apenas um para o resultado logico ser verdadeiro-->
+                <li>False || True -> True</li>
+                <li>False || False -> False</li>
+            </ul>
     </ul>
+
+    <h1>Ordem de Recedencia dos Operadores</h1>
+    <ol>
+        <li>Aritmeticos - (),**, /</li>
+        <li>Relacionais - >, <, >=</li>
+        <li>Logicos - !, &&, ||</li>
+            <ol>
+                <li>! - Negacao</li>
+                <li>&& - Conjunção</li>
+                <li>|| - Dijunção</li>
+            </ol>
+    </ol>
+
+    <h1>Operador Ternario</h1>
+    <p>Teste (?) True (:) False</p>
+    <ul>
+        <p>teste - Um Teste Logico</p>
+        <p>(?) True - Oque vai acontecer se o teste for Verdadeiro</p>
+        <p>(:) False - Oque Vai acontecer se o teste for Falso</p>
+    </ul>
+    <p>media>=7.0 ? "Aprovado" : "Reprovado"</p> 
+        <!--Se o teste Logico for verdadeiro - Aprovado-->
+        <!--Se o teste Logico For Falso - Reprovado-->
 </body>
 </html>
 
