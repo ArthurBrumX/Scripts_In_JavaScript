@@ -1,0 +1,1 @@
+console.log('O console funcionou corretamente') /*para escrever na tela usa o comando (console.log)*/ 
