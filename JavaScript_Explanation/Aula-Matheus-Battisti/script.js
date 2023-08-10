@@ -244,10 +244,10 @@ if (b === 'joao') {
     console.log('O nome é Gustavo')
 }
 else{
-    
+    console.log('nao encontramos nenhum nome')
 }
 
-
+// if Ternario - um if que pode ser feita em uma linha só
 
 
 
