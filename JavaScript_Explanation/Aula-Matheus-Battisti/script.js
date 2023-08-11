@@ -249,6 +249,180 @@ else{
 
 // if Ternario - um if que pode ser feita em uma linha só
 
+// VARIAVEL = TESTE LOGICO ? VERDADEIRO : FALSO
+
+let testingANumber = someNumber < 20 ? 'yes': 'no' // o Resultado do teste logico vai ser atribuido a variavel
+
+console.log(testingANumber)
+
+
+// Estruturas de repeticao (Loop)
+
+const mylist = [1,2,3,4,5]
+
+let counter = 0
+
+while(counter < mylist.length ){ //length = contar
+    console.log('Imprimindo' + mylist[counter])
+    // Enquanto counter for menor que o valor de (mylist)
+    counter++ // counter = counter + 1
+    
+}
+
+
+const mysecondlist = ['a','b','c','d','e']
+
+for (let counter = 0; counter < mysecondlist.length; counter++ ){
+    console.log(`Imprimindo ${mysecondlist[counter]}`)
+}
+
+
+// metodos de arrays -> Repeticao
+
+//forEach
+
+const names = [ "Arthur","Matheus","Felipe","Ygor"]
+
+names.forEach(function(names){
+    console.log(`O nome é: ${name}`)
+}) //consegue exibir todos os itens em funcao anonima.
+
+
+
+
+// metodo - map (serve para modificar alguma coisa, normamente alguma lista)
+
+const modifiedNames = names.map(function(name){
+    if(name === 'Arthur'){
+        return name = 'Sr.Arthur' //o nome que era apenas 'Arthur' Agora é 'Sr.Arthur'
+    } else{
+        return name
+    }
+})
+
+
+console.log(modifiedNames)
+
+
+//Filter - Filtro (voce cria um filtro apenas para trazer os elementos que eu quero atraves do return)
+
+const bigNumbers = [1,2,3,4,5,20,30].filter(function(number){
+    return number >= 5
+})
+
+console.log(bigNumbers)
+
+
+// reduce  - reduzir (consegue reduzir uma lista a um elemento só)
+// reduz o elemento e torna um só
+
+const sumAll = [10,20,30,40,50].reduce(function(total,number){
+    return total + number
+})
+
+console.log(sumAll)
+
+// Funcao ( a gente cria um bloco de codigo que pode ser reultilizado(reciclado) em qualquer parte do codigo)
+
+function minhaFuncao(){
+    console.log('Olá, Funcao!')
+}
+
+minhaFuncao() // Chamou a funcao
+minhaFuncao()
+minhaFuncao()
+minhaFuncao()
+minhaFuncao()
+minhaFuncao()
+
+//Argumentos - Parametros de funcoes
+
+// function nomeCompleto(nome,sobrenome){
+//     console.log(`O nome completo é: ${nome} ${sobrenome}`) 
+// }
+
+// nomeCompleto('Arthur','Brum')
+// nomeCompleto('Joao', 'Azevedo')
+
+function nomeCompleto(nome,sobrenome){
+    return `O nome completo é: ${nome} ${sobrenome}`
+    // Se for um console.log ele imprime
+    // Se for uma variavel ele armazena
+}
+
+console.log(nomeCompleto('Arthur','Brum'))
+console.log(nomeCompleto('Joao', 'Azevedo'))
+
+
+
+const meuNomeCompleto = nomeCompleto('Maria','Matos')
+
+console.log(meuNomeCompleto)
+
+//-------------------------------------------------
+
+// const primeiroNome = 'Maria'
+// const segundoNome = 'Matos'
+
+// const nomeCompleto_2 = meuNomeCompleto_2 (primeiroNome, segundoNome)
+
+// console.log(meuNomeCompleto_2)
+
+//--------------------------------------------------
+
+
+// Arrow functions 
+
+
+// Arroz function != function
+
+const myArrowFunction = (a,b) => //Uma variavel para armazenar variavel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
