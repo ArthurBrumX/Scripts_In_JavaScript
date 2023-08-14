@@ -335,14 +335,7 @@ minhaFuncao()
 minhaFuncao()
 minhaFuncao()
 
-//Argumentos - Parametros de funcoes
-
-// function nomeCompleto(nome,sobrenome){
-//     console.log(`O nome completo é: ${nome} ${sobrenome}`) 
-// }
-
-// nomeCompleto('Arthur','Brum')
-// nomeCompleto('Joao', 'Azevedo')
+// Sempre que o codigo for se repetir, é recomendavel colocar em funcao
 
 function nomeCompleto(nome,sobrenome){
     return `O nome completo é: ${nome} ${sobrenome}`
@@ -353,6 +346,14 @@ function nomeCompleto(nome,sobrenome){
 console.log(nomeCompleto('Arthur','Brum'))
 console.log(nomeCompleto('Joao', 'Azevedo'))
 
+    //Argumentos - Parametros de funcoes
+
+    // function nomeCompleto(nome,sobrenome){
+    //     console.log(`O nome completo é: ${nome} ${sobrenome}`) 
+    // }
+
+    // nomeCompleto('Arthur','Brum')
+    // nomeCompleto('Joao', 'Azevedo')
 
 
 const meuNomeCompleto = nomeCompleto('Maria','Matos')
@@ -371,12 +372,140 @@ console.log(meuNomeCompleto)
 //--------------------------------------------------
 
 
-// Arrow functions 
+// Arrow functions (sintaxe um pouco mais resumida)
 
 
 // Arroz function != function
 
-const myArrowFunction = (a,b) => //Uma variavel para armazenar variavel
+const myArrowFunction = (a,b) => {
+    return a + b
+} //Uma variavel para armazenar variavel
+
+console.log(myArrowFunction(2,5))
+
+const mySimpleArrowFunction = (a + b) => a + b // Quando tudo se resolve em uma linha nao precisa de chaves.
+
+console.log(mySimpleArrowFunction)
+
+
+// Classes (Tambem onde se ve orientacao a objeto)
+
+class Product{
+
+    // metodo constructor
+    constructor(name, price){
+        this.name
+        this.price
+    }
+
+    productDetails(){
+        return `O nome do produto é ${this.name} e o preço é R$${this.price}`
+    }
+}
+
+// Criando uma nova Instacia
+
+const socks = new Product('Meia Branca', 10.99)
+const shirt = new Product('Camisa Preta', 15.99)
+
+console.log(socks.name)
+console.log(socks.price)
+
+console.log(shirt.name)
+console.log(shirt.productDetails(''))
+
+
+// Heranca (Onde se EStende a Classe)
+
+class superProduct extends Product{
+    constructor(name,price,size){
+        super(name, price)
+        this.size = size
+    }
+
+    showAdjective(adjective){
+        return `O ${this.name} é muito ${adjective}`
+    }
+
+    // Static 
+
+    sayHello(){
+        console.log('Hello')
+    }
+}
+
+const tenis = new superProduct('Tenis Vermelho',59.90,'42')
+
+console.log(tenis.name)
+console.log(tenis.size)
+console.log(tenis.showAdjective('Bom'))
+
+
+
+superProduct.sayHello()
+
+
+
+// Dom (Document Objetct Model) - Ferramenta para adicionar eventos e modificacoes ao html e css atraves do js
+
+    // Como selecionar um elemento por Dom
+    // Query Selector
+
+
+// Selecao de elementos
+
+const title = document.getElementById('title') //#title
+
+console.log(title)
+
+
+// Query Selector
+
+    //Ao inves de seecionar byId ou ByClass
+    // Basta colocar o querrySelector e se for:
+        // id = # 
+        // Class = .
+const sameTitle = document.querySelector("#title") 
+
+console.log(sameTitle)
+
+const text = document.querySelectorAll('.text')
+
+console.log(text)
+console.log(text[1])
+
+text.forEach((text) => {
+    console.log(text.textContent.toUpperCase())
+})
+
+
+// manipulacao de elementos
+
+title.textContent = 'Mudei o Texto'
+
+text[0].innerHTML = '<span>Alteramos o HTML Desse Elemento</span>'
+
+text[1].style.backgroundColor = 'red' //background-color: red
+
+text[2].classList.add('My-Class')
+
+text[2].classList.remove('text')
+
+text[3].remove()
+
+
+// Eventos
+
+const btn = document.querySelector("#bnt")
+
+btn.addEventListener("click",function(){
+    console.log('Clicou!')
+})
+
+btn.addEventListener("click",function(){
+    console.log('Clicou!')
+    text[2].style.color = 'blue'
+})
 
 
 
@@ -388,6 +517,43 @@ const myArrowFunction = (a,b) => //Uma variavel para armazenar variavel
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
