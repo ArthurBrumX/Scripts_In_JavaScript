@@ -127,7 +127,7 @@ console.log(meuNumero4)
 
 //---------------------------------------------------
 
-// Estrutura de Repeticao - If, Else, Else if
+// Estrutura de condicional - If, Else, Else if
 
 const idade  = 20
 
