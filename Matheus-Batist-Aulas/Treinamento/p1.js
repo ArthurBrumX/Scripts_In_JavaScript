@@ -124,6 +124,10 @@ switch(fruta){
         console.log("Não Encontrei a fruta em nenhum dos casos!!")
 }
 
+//for
+
+// contador, condicao limite, Incremento
+
 
 
 
