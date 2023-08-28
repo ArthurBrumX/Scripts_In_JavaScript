@@ -180,7 +180,7 @@ function testeHoisting(){
 
 // Arrow Function
 
-const testeSrrow = (/*Paramentros*/) = console.log("Isso tambem é uma funcao")
+const testeArrow = (/*Paramentros*/) => console.log("Isso tambem é uma funcao")
 
 
 // truthy e Falsy
