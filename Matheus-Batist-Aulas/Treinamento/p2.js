@@ -76,9 +76,28 @@ console.log(10 > 5 && 20 < 5) // Falso
 console.log(10 < 5 && 20 < 5) // Falso
 
 // Apenas um dos testes Logicos tem que ser Verdadeiro
-console.log(10 < 5 || 20 < 5) // Verdadeiro
-console.log(10 < 5 || 20 < 5) // Verdadeiro
+console.log(10 > 5 || 20 > 5) // Verdadeiro
+console.log(10 > 5 || 20 < 5) // Verdadeiro
 console.log(10 < 5 || 20 < 5) // Falso
+
+
+// Conversao de tipos
+
+const meuNumero2 = "123"
+const meuNumeroConvertido = Number(meuNumero2) // conversao e atribuicao
+
+console.log (typeof meuNumeroConvertido2)
+console.log(meuNumeroConvertido2)
+console.log(meuNumero2)
+
+const meuNumero3 = "123"
+const meuNumeroConvertido3 = number(meuNumero3)
+
+console.log(typerof meuNumeroConvertido3)
+console.log(meuNumero3)
+
+
+
 
 
 
